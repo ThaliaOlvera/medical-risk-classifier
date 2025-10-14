@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Medical Risk Clasiffier</title>
 </head>
 <body>
+    <header>Medical Risk</header>
+    <main>
+        <form action="" method="get">
+            <section class="info_container">
+                <aside class="clasification">
+                    <h1>Registration</h1>
+                    <label for="">Patient Name</label>
+                    <input type="text" name="patient_name" id="" placeholder="Enter Patient's name">
+
+                    <label for="">Date of birth</label>
+                    <input type="number" name="date_of_birth" id="" placeholder="Enter date of birth">
+
+                    <article class="symptoms_container">
+                        <h2>Symptoms</h2>
+
+                        <div class="sintomas-grid" id="sintomas-container">
+                          <button class="sintoma-btn" data-sintoma="fiebre" data-critico="true">
+                             <img src="icons/fiebre.svg" alt="Icono de fiebre" class="sintoma-img">
+                             <span class="sintoma-text">Fiebre</span>
+                             <span class="sintoma-subtext">>38°C</span>
+                          </button>
     
+                          <button class="sintoma-btn" data-sintoma="dolor-toracico" data-critico="true">
+                              <img src="icons/dolor-toracico.svg" alt="Icono de dolor torácico" class="sintoma-img">
+                              <span class="sintoma-text">Dolor Torácico</span>
+                              <span class="sintoma-subtext">Opresivo</span>
+                          </button>
+                          <button class="sintoma-btn" data-sintoma="dolor-toracico" data-critico="true">
+                              <img src="icons/dolor-toracico.svg" alt="Icono de dolor torácico" class="sintoma-img">
+                              <span class="sintoma-text">Dolor Torácico</span>
+                              <span class="sintoma-subtext">Opresivo</span>
+                          </button><button class="sintoma-btn" data-sintoma="dolor-toracico" data-critico="true">
+                              <img src="icons/dolor-toracico.svg" alt="Icono de dolor torácico" class="sintoma-img">
+                              <span class="sintoma-text">Dolor Torácico</span>
+                              <span class="sintoma-subtext">Opresivo</span>
+                          </button><button class="sintoma-btn" data-sintoma="dolor-toracico" data-critico="true">
+                              <img src="icons/dolor-toracico.svg" alt="Icono de dolor torácico" class="sintoma-img">
+                              <span class="sintoma-text">Dolor Torácico</span>
+                              <span class="sintoma-subtext">Opresivo</span>
+                          </button><button class="sintoma-btn" data-sintoma="dolor-toracico" data-critico="true">
+                              <img src="icons/dolor-toracico.svg" alt="Icono de dolor torácico" class="sintoma-img">
+                              <span class="sintoma-text">Dolor Torácico</span>
+                              <span class="sintoma-subtext">Opresivo</span>
+                          </button><button class="sintoma-btn" data-sintoma="dolor-toracico" data-critico="true">
+                              <img src="icons/dolor-toracico.svg" alt="Icono de dolor torácico" class="sintoma-img">
+                              <span class="sintoma-text">Dolor Torácico</span>
+                              <span class="sintoma-subtext">Opresivo</span>
+                          </button><button class="sintoma-btn" data-sintoma="dolor-toracico" data-critico="true">
+                              <img src="icons/dolor-toracico.svg" alt="Icono de dolor torácico" class="sintoma-img">
+                              <span class="sintoma-text">Dolor Torácico</span>
+                              <span class="sintoma-subtext">Opresivo</span>
+                          </button>
+                        </div>
+
+                    </article>
+
+                    <input type="text" name="coments" id="" placeholder="Comments">
+
+
+
+                </aside>
+
+                <article class="visualization">
+                    <p>Welcome</p>
+                    <button type="submit">Register</button>
+                </article>
+            </section>
+        </form>
+
+
+        <section>Results</section>
+        <section>Diagram</section>
+
+
+
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
