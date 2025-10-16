@@ -4,44 +4,122 @@
   box-sizing: border-box;
 }
 
-main{
-    width: 100%;
-    height: 80dvh;
-    background-color: pink;
+:root {
+  --xsmal: 0.5rem;
+  --small: 1rem;
+  --medium: 2rem;
+  --large: 3 rem;
+  --xlg: 4rem;
+}
+
+header {
+  width: 100%;
+  height: 10dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: plum;
+}
+
+main {
+  width: 100%;
+  height: 80dvh;
+  background-color: pink;
 }
 
 /*Form information*/
-.info_container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: salmon;
+.info_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: salmon;
 }
 
 /*Enter Patient Information */
-.clasification{
-    background-color: fuchsia;
-    width: 50%;
-    height: 80dvh;
-     display: flex;
+.clasification {
+  background-color: fuchsia;
+  width: 50%;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.clasification_info_patient_container {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: 1.5rem;
+}
+
+.info_patient:nth-child(1) {
+  width: 30rem;
+}
+
+.info_patient {
+  display: flex;
+  flex-direction: column;
+
+  
+  text-align: left;
+  font-size: var(--small);
+  
+  gap: var(--xsmal);
+  padding: 5px;
+}
+
+.info_patient input {
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+
+/*Vital Signs */
+#vitalSigns_container {
+    width: 100%;
+    height: auto;
+
+    padding: 1rem;
+    background-color: royalblue;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: left;
+    align-items: start;
 }
 
 /*Display Results */
-.visualization{
-    width: 50%;
-    height: 80dvh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rebeccapurple;
+.visualization {
+  width: 50%;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 300px 0px 0px 300px;
+  background-color: rebeccapurple;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  height: 10dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: darksalmon;
 }
